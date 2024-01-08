@@ -1,0 +1,43 @@
+﻿@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+body {
+  background-color: black;
+  border: 1px solid red;
+  overflow: hidden;
+  padding: 0;
+}
+
+#main_section {
+  border: 1px solid white;
+  height: 96vh;
+  width: 100%;
+  margin: auto;
+  padding: 0;
+  position: relative;
+}
+
+#ball {
+  height: 5%;
+  width: 8%;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  animation: spin 3s linear infinite;
+}
+
+#paddle {
+  width: 25%;
+  height: 3vh;
+  background-color: white;
+  position: relative;
+  top: 96.5%;
+  margin: 0 1%;
+}
